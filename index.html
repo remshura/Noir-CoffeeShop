@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIR — Artisan Coffee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="coffee-cup">
+                <div class="cup-body">
+                    <div class="coffee-fill"></div>
+                    <div class="coffee-steam">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="cup-handle"></div>
+                <div class="cup-plate"></div>
+            </div>
+            <div class="preloader-text">Brewing your experience</div>
+            <div class="preloader-progress"><div class="preloader-bar"></div></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">NOIR</a>
+            <div class="nav-links">
+                <a href="#about">Story</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="#contact" class="nav-cta magnetic-btn">Reserve a Table</a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge"><span>Est. 2026 &mdash; Artisan Coffee Roasters</span></div>
+            <h1 class="hero-title">
+                <span class="line"><span class="line-inner">The Art of</span></span>
+                <span class="line"><span class="line-inner">Perfect</span></span>
+                <span class="line accent"><span class="line-inner">Coffee</span></span>
+            </h1>
+            <p class="hero-subtitle">Where every sip tells a story, and every cup is a masterpiece crafted with passion and precision.</p>
+            <div class="hero-cta">
+                <a href="#menu" class="btn btn-primary magnetic-btn">Explore Menu</a>
+                <a href="#about" class="btn btn-outline magnetic-btn">Our Story</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal-image">
+                    <div class="about-img-placeholder" style="background:url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&h=750&fit=crop&q=80') center/cover no-repeat #1a1a1a"></div>
+                    <div class="about-badge">
+                        <span class="badge-num">12+</span>
+                        <span class="badge-label">Years of<br>Excellence</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag reveal-up">Our Story</span>
+                    <h2 class="section-title reveal-up">Crafted with Passion,<br><em>Served with Soul</em></h2>
+                    <p class="reveal-up">Born from a deep reverence for the coffee bean, NOIR is more than a caf&eacute; &mdash; it&rsquo;s a sanctuary for those who appreciate the finer things. Every cup we serve is a testament to our unwavering commitment to excellence, from sourcing single-origin beans to the final pour.</p>
+                    <div class="about-stats reveal-up">
+                        <div class="stat">
+                            <span class="stat-num" data-count="50">0</span><span class="stat-suffix">+</span>
+                            <span class="stat-label">Bean Varieties</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num" data-count="12">0</span><span class="stat-suffix">K+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num" data-count="8">0</span>
+                            <span class="stat-label">Master Baristas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker">
+        <div class="ticker-track">
+            <span>NOIR COFFEE</span><span class="ticker-dot">&diams;</span>
+            <span>ARTISAN ROASTERY</span><span class="ticker-dot">&diams;</span>
+            <span>SINGLE ORIGIN</span><span class="ticker-dot">&diams;</span>
+            <span>HANDCRAFTED DAILY</span><span class="ticker-dot">&diams;</span>
+            <span>BROOKLYN, NY</span><span class="ticker-dot">&diams;</span>
+            <span>NOIR COFFEE</span><span class="ticker-dot">&diams;</span>
+            <span>ARTISAN ROASTERY</span><span class="ticker-dot">&diams;</span>
+            <span>SINGLE ORIGIN</span><span class="ticker-dot">&diams;</span>
+            <span>HANDCRAFTED DAILY</span><span class="ticker-dot">&diams;</span>
+            <span>BROOKLYN, NY</span><span class="ticker-dot">&diams;</span>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    <section id="menu" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">The Menu</span>
+                <h2 class="section-title reveal-up">Our Signature <em>Collection</em></h2>
+            </div>
+            <div class="menu-tabs reveal-up">
+                <button class="menu-tab active" data-tab="espresso">Espresso</button>
+                <button class="menu-tab" data-tab="pourover">Pour Over</button>
+                <button class="menu-tab" data-tab="specialty">Specialty</button>
+                <button class="menu-tab" data-tab="pastries">Pastries</button>
+            </div>
+            <div class="menu-grid">
+                <!-- Espresso -->
+                <div class="menu-card" data-category="espresso">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Classic Espresso</h3><span class="card-price">$4.50</span></div>
+                        <p>Single origin, bold &amp; rich with a velvety crema</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="espresso">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Cortado</h3><span class="card-price">$5.00</span></div>
+                        <p>Espresso with equal part steamed milk, perfectly balanced</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="espresso">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Flat White</h3><span class="card-price">$5.50</span></div>
+                        <p>Double shot with velvety microfoam, smooth finish</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="espresso">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1521302080334-4bebac2763a6?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Americano</h3><span class="card-price">$4.00</span></div>
+                        <p>Espresso with hot water, clean and aromatic</p>
+                    </div>
+                </div>
+                <!-- Pour Over -->
+                <div class="menu-card" data-category="pourover" style="display:none">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Ethiopian Yirgacheffe</h3><span class="card-price">$6.00</span></div>
+                        <p>Bright, floral with vibrant citrus notes</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="pourover" style="display:none">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Colombian Supremo</h3><span class="card-price">$5.50</span></div>
+                        <p>Nutty, chocolate undertones, beautifully balanced</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="pourover" style="display:none">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Kenyan AA</h3><span class="card-price">$6.50</span></div>
+                        <p>Bold, wine-like acidity with berry notes</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="pourover" style="display:none">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Guatemala Antigua</h3><span class="card-price">$6.00</span></div>
+                        <p>Smoky, cocoa and warm spice finish</p>
+                    </div>
+                </div>
+                <!-- Specialty -->
+                <div class="menu-card" data-category="specialty" style="display:none">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Noir Signature</h3><span class="card-price">$7.00</span></div>
+                        <p>Our secret recipe &mdash; rich, complex, unforgettable</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="specialty" style="display:none">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Lavender Latte</h3><span class="card-price">$6.50</span></div>
+                        <p>Espresso, French lavender, silky oat milk</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="specialty" style="display:none">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefda?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Rose Mocha</h3><span class="card-price">$7.00</span></div>
+                        <p>Dark chocolate, rose essence, double espresso</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="specialty" style="display:none">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Matcha Fusion</h3><span class="card-price">$6.50</span></div>
+                        <p>Ceremonial grade matcha layered with espresso</p>
+                    </div>
+                </div>
+                <!-- Pastries -->
+                <div class="menu-card" data-category="pastries" style="display:none">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Almond Croissant</h3><span class="card-price">$4.50</span></div>
+                        <p>Buttery, flaky layers with almond cream filling</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="pastries" style="display:none">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Dark Chocolate Torte</h3><span class="card-price">$5.50</span></div>
+                        <p>Rich, decadent, made with single origin cacao</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="pastries" style="display:none">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Pistachio Financier</h3><span class="card-price">$4.00</span></div>
+                        <p>Classic French almond cake with pistachio glaze</p>
+                    </div>
+                </div>
+                <div class="menu-card" data-category="pastries" style="display:none">
+                    <div class="card-img" style="background-image:url('https://images.unsplash.com/photo-1509365390695-33aee754301f?w=600&h=400&fit=crop&q=80')"></div>
+                    <div class="card-body">
+                        <div class="card-top"><h3>Cinnamon Roll</h3><span class="card-price">$4.50</span></div>
+                        <p>Fresh baked daily with cream cheese glaze</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Horizontal Scroll -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag reveal-up">The Experience</span>
+                <h2 class="section-title reveal-up">Step Inside <em>NOIR</em></h2>
+            </div>
+        </div>
+        <div class="gallery-scroll-container">
+            <div class="gallery-sticky">
+                <div class="gallery-track">
+                    <div class="gallery-item">
+                        <div class="gallery-img" style="background:url('https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=800&h=600&fit=crop&q=80') center/cover no-repeat #1a1a1a"></div>
+                        <div class="gallery-caption"><span>01</span>The Interior</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img" style="background:url('https://images.unsplash.com/photo-1447933601403-56dc2f6421d0?w=800&h=600&fit=crop&q=80') center/cover no-repeat #1a1a1a"></div>
+                        <div class="gallery-caption"><span>02</span>Bean Selection</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img" style="background:url('https://images.unsplash.com/photo-1534687941688-651ccaafbff8?w=800&h=600&fit=crop&q=80') center/cover no-repeat #1a1a1a"></div>
+                        <div class="gallery-caption"><span>03</span>Latte Art</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img" style="background:url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&h=600&fit=crop&q=80') center/cover no-repeat #1a1a1a"></div>
+                        <div class="gallery-caption"><span>04</span>Our Baristas</div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-img" style="background:url('https://images.unsplash.com/photo-1559496417-e7f25cb247f3?w=800&h=600&fit=crop&q=80') center/cover no-repeat #1a1a1a"></div>
+                        <div class="gallery-caption"><span>05</span>The Roastery</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <div class="testimonial-wrapper">
+                <span class="section-tag reveal-up">Testimonials</span>
+                <div class="testimonial-slider">
+                    <div class="testimonial active">
+                        <blockquote>&ldquo;NOIR isn&rsquo;t just a coffee shop &mdash; it&rsquo;s an experience that engages all your senses. Absolutely extraordinary.&rdquo;</blockquote>
+                        <div class="testimonial-author">
+                            <span class="author-name">Sarah Mitchell</span>
+                            <span class="author-role">Food Critic, The Times</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <blockquote>&ldquo;The attention to detail in every cup is extraordinary. From the first sip to the last, this is what coffee should be.&rdquo;</blockquote>
+                        <div class="testimonial-author">
+                            <span class="author-name">James Chen</span>
+                            <span class="author-role">Coffee Enthusiast &amp; Blogger</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <blockquote>&ldquo;A masterpiece of atmosphere and flavor. NOIR has set a new standard for specialty coffee in Brooklyn.&rdquo;</blockquote>
+                        <div class="testimonial-author">
+                            <span class="author-name">Elena Rodriguez</span>
+                            <span class="author-role">Lifestyle Editor, Vogue</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="testimonial-prev magnetic-btn" aria-label="Previous">&larr;</button>
+                    <div class="testimonial-dots"></div>
+                    <button class="testimonial-next magnetic-btn" aria-label="Next">&rarr;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-content">
+                    <span class="section-tag reveal-up">Visit Us</span>
+                    <h2 class="section-title reveal-up">Ready for Your<br><em>Perfect Cup?</em></h2>
+                    <div class="contact-info reveal-up">
+                        <div class="info-item">
+                            <span class="info-label">Address</span>
+                            <span class="info-value">123 Artisan Street, Brooklyn, NY 11201</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Hours</span>
+                            <span class="info-value">Mon &ndash; Fri: 7am &ndash; 8pm<br>Sat &ndash; Sun: 8am &ndash; 9pm</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Contact</span>
+                            <span class="info-value">hello@noircoffee.com<br>(718) 555-0147</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal-up">
+                    <h3>Reserve a Table</h3>
+                    <form class="contact-form" onsubmit="return false">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder=" " required>
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder=" " required>
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" id="date" placeholder=" " required>
+                                <label for="date">Date</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" id="guests" placeholder=" " min="1" max="12" required>
+                                <label for="guests">Guests</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="3" placeholder=" "></textarea>
+                            <label for="message">Special Requests</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary magnetic-btn btn-full">Reserve Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">NOIR</h3>
+                    <p>Artisan coffee, crafted with passion.<br>Brooklyn, New York.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <a href="#about">Our Story</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter / X</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">TikTok</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p class="footer-newsletter-text">Stay in the loop with our latest blends and events.</p>
+                    <form class="footer-newsletter" onsubmit="return false">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit" class="magnetic-btn">&rarr;</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 NOIR Coffee. Designed by Rembelle Dilag. All rights reserved.</span>
+                <button class="back-to-top magnetic-btn" aria-label="Back to top">&uarr; Top</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
